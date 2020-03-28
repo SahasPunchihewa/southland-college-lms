@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MySouthland - Southland College Learning Portal</title>
+<title>Downloads - Southlands College Learning Portal</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -51,7 +51,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text">My<span>Southland</span></div>
+									<div class="logo_text"><img src="images/logo.png"><span>Southlands College</span></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
@@ -161,6 +161,7 @@
 							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
 								<div class="col">
 									<div class="courses_button trans_200"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank">Download</a></div>
+									<div class="courses_button trans_200"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank">Delete</a></div>
 								</div>
 							</div>
 						</div>

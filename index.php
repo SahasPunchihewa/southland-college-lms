@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MySouthland - Southland College Learning Portal</title>
+<title>Southlands College Learning Portal</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -50,7 +50,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text"><img src="images/logo.png"><span>Southland</span></div>
+									<div class="logo_text"><img src="images/logo.png"><span>Southlands College</span></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">
@@ -112,8 +112,8 @@
 						<div class="container">
 							<div class="row">
 								<div class="col text-center">
-									<div class="home_slider_title">Southland College Learning Portal</div>
-									<div class="home_slider_subtitle">Powered by Southland College ICT Society</div>
+									<div class="home_slider_title">Southlands College Learning Portal</div>
+									<div class="home_slider_subtitle">Powered by Southlands College ICT Society</div>
 									<div class="home_slider_form_container">
 										<form action="download.php" id="home_search_form_1" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between" method="GET">
 											<div class="d-flex flex-row align-items-center justify-content-start">

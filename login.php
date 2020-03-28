@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>MySouthland - Southland College Learning Portal</title>
+<title>Login - Southlands College Learning Portal</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Unicat project">
@@ -47,7 +47,7 @@
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
 							<div class="logo_container">
 								<a href="#">
-									<div class="logo_text">My<span>Southland</span></div>
+									<div class="logo_text"><img src="images/logo.png"><span>Southlands College</span></div>
 								</a>
 							</div>
 							<nav class="main_nav_contaner ml-auto">

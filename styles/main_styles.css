@@ -131,7 +131,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-weight: 700;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -272,7 +272,7 @@ section
 .top_bar
 {
 	width: 100%;
-	background: #14bdee;
+	background: #e31c23;
 }
 .header.scrolled .top_bar
 {
@@ -294,7 +294,7 @@ section
 }
 .question
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 14px;
 	color: #FFFFFF;
 	margin-left: 0px;
@@ -382,7 +382,7 @@ section
 }
 .logo_text
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -397,7 +397,7 @@ section
 }
 .logo_text span
 {
-	color: #14bdee;
+	color: #9b0615;
 }
 .header.scrolled .logo
 {
@@ -446,7 +446,7 @@ section
 .main_nav li a:hover,
 .main_nav li.active a
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .main_nav li.active::after
 {
@@ -456,7 +456,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background: #14bdee;
+	background: #e31c23;
 	content: '';
 }
 .search_button
@@ -483,7 +483,7 @@ section
 .search_button:hover i,
 .shopping_cart:hover i
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .header_search_form
 {
@@ -497,7 +497,7 @@ section
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
-	background: #14bdee;
+	background: #e31c23;
 	z-index: -1;
 	opacity: 0;
 	-webkit-transition: all 400ms ease;
@@ -561,7 +561,7 @@ section
 }
 .hamburger:hover i
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 
 /*********************************
@@ -659,7 +659,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .menu .search
 {
@@ -798,16 +798,16 @@ section
 }
 .home_slider_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.2;
-	color: #384158;
+	color: #FFFFFF;
 }
 .home_slider_subtitle
 {
 	font-size: 24px;
-	color: #76777a;
+	color: #D7D8D9;
 	margin-top: 9px;
 }
 .home_slider_form_container
@@ -889,7 +889,7 @@ section
 {
 	width: 120px;
 	height: 46px;
-	background: #14bdee;
+	background: #e31c23;
 	border: none;
 	outline: none;
 	border-radius: 3px;
@@ -932,7 +932,7 @@ section
 }
 .home_slider_nav:hover
 {
-	background: #14bdee;
+	background: #e31c23;
 }
 
 /*********************************
@@ -1019,7 +1019,7 @@ section
 }
 .course_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	color: #384158;
 	-webkit-transition: all 200ms ease;
@@ -1030,7 +1030,7 @@ section
 }
 .course_title a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .course_teacher
 {
@@ -1072,14 +1072,14 @@ section
 }
 .course_price
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	font-weight: 700;
-	color: #14bdee;
+	color: #e31c23;
 }
 .course_price span
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 14px;
 	font-weight: 400;
 	text-decoration: line-through;
@@ -1091,7 +1091,7 @@ section
 	width: 210px;
 	height: 46px;
 	border-radius: 3px;
-	background: #14bdee;
+	background: #e31c23;
 	text-align: center;
 	margin: 0 auto;
 	margin-top: 41px;
@@ -1139,7 +1139,7 @@ section
 }
 .counter_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	color: #FFFFFF;
 	font-weight: 700;
 }
@@ -1181,7 +1181,7 @@ section
 	font-size: 42px;
 	font-weight: 700;
 	line-height: 0.75;
-	color: #14bdee;
+	color: #e31c23;
 }
 .milestone_text
 {
@@ -1212,7 +1212,7 @@ section
 }
 .counter_form_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 24px;
 	font-weight: 700;
 	color: #384158;
@@ -1299,7 +1299,7 @@ section
 	text-transform: uppercase;
 	border: none;
 	outline: none;
-	background: #14bdee;
+	background: #e31c23;
 	cursor: pointer;
 	margin-top: 30px;
 	box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
@@ -1368,24 +1368,24 @@ section
 }
 .event_day
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 24px;
-	color: #14bdee;
+	color: #e31c23;
 	font-weight: 700;
 	line-height: 0.75;
 }
 .event_month
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 14px;
-	color: #14bdee;
+	color: #e31c23;
 	font-weight: 400;
 	line-height: 0.75;
 	margin-top: 9px;
 }
 .event:hover .event_date > div
 {
-	background: #14bdee;
+	background: #e31c23;
 }
 .event:hover .event_day,
 .event:hover .event_month
@@ -1398,7 +1398,7 @@ section
 }
 .event_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.4;
@@ -1411,7 +1411,7 @@ section
 }
 .event_title a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .event_info_container
 {
@@ -1502,7 +1502,7 @@ section
 }
 .team_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	font-weight: 700;
 	color: #384158;
@@ -1514,7 +1514,7 @@ section
 }
 .team_title a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .team_subtitle
 {
@@ -1547,7 +1547,7 @@ section
 }
 .social_list ul li:hover a i
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .team_col .team_item
 {
@@ -1604,7 +1604,7 @@ section
 }
 .news_post_large_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	font-weight: 700;
 	color: #384158;
@@ -1617,7 +1617,7 @@ section
 }
 .news_post_large_title a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .news_post_meta
 {
@@ -1650,7 +1650,7 @@ section
 }
 .news_post_meta ul li a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .news_post_text
 {
@@ -1675,7 +1675,7 @@ section
 }
 .news_post_link a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .news_posts_small
 {
@@ -1692,7 +1692,7 @@ section
 }
 .news_post_small_title a
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 1.55;
@@ -1705,7 +1705,7 @@ section
 }
 .news_post_small_title a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 
 /*********************************
@@ -1731,7 +1731,7 @@ section
 }
 .newsletter_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -1808,7 +1808,7 @@ section
 	cursor: pointer;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #14bdee;
+	color: #e31c23;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 }
@@ -1842,7 +1842,7 @@ section
 }
 .footer_logo_text
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
@@ -1855,11 +1855,11 @@ section
 }
 .footer_logo_text span
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .footer_title
 {
-	font-family: 'Roboto Slab', serif;
+	font-family: "Century Gothic";
 	font-size: 18px;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -1911,7 +1911,7 @@ section
 }
 .footer_social ul li:hover
 {
-	background: #14bdee;
+	background: #e31c23;
 }
 .footer_contact
 {
@@ -1961,7 +1961,7 @@ section
 }
 .footer_links_container ul li a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .footer_mobile
 {
@@ -2001,7 +2001,7 @@ section
 }
 .cr_text a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }
 .cr_list li:not(:last-child)
 {
@@ -2019,5 +2019,5 @@ section
 }
 .cr_list li a:hover
 {
-	color: #14bdee;
+	color: #e31c23;
 }

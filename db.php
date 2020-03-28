@@ -1,7 +1,8 @@
+
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $db = "lms";
  
 // Create connection

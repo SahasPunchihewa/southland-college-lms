@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -161,7 +162,11 @@
 							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
 								<div class="col">
 									<div class="courses_button trans_200"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank">Download</a></div>
-									<div class="courses_button trans_200"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank">Delete</a></div>
+									<?php if (isset($_SESSION['auth'])){ ?>
+									<form>
+									<div class="courses_button trans_200"><a href="<?php echo('delete.php?id='.$row['documentId'].'&grade='.$_GET['grade']) ; ?>">Remove</a></div>
+									</form>
+									<?php } ?>
 								</div>
 							</div>
 						</div>

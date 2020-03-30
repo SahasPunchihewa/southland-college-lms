@@ -120,7 +120,7 @@ include("db.php");
 $sql = "DELETE FROM document WHERE documentId=".$_GET['id'];
 
 if ($conn->query($sql) === TRUE) {
-    $msg = "You have successfully delete document";
+    $msg = "You have successfully delete document.";
 } else {
     $msg = "Oops! Some thing went wrong";
 }

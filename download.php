@@ -59,6 +59,13 @@
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="#">Download Portal</a></li>
+									<?php if (isset($_SESSION['auth'])){
+										echo("<li><a href='portal.php'>Staff Portal</a></li>");
+										echo("<li><a href='logout.php'>Log Out</a></li>");
+									}else{
+										echo("<li><a href='login.php'>Staff Login</a></li>");
+									}	
+									?>
 								</ul>
 								
 
@@ -132,7 +139,7 @@
 							<?php
 						}else{
 							?>
-							<h2 class="section_title">Please Select Grade</h2>
+							<h2 class="section_title">Please select the grade you want.</h2>
 							<?php
 						}
 						?>
@@ -154,9 +161,11 @@
 			?>
 				<div class="col-lg-4 course_col">
 					<div class="course">
-						<div class="course_image"><img src=<?php echo("images/".rand(1,5).".jpg") ?> alt=""></div>
 						<div class="course_body">
 							<h3 class="course_title"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank"><?php echo($row['documentTitle']); ?></a></h3>
+							<div class="course_text">
+									<p>Upload Date: <?php echo($row['uploadDate']); ?></p>
+							</div>
 						</div>
 						<div class="course_footer">
 							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">

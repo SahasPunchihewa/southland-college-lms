@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,7 +57,13 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li class="active"><a href="#">Home</a></li>
-									<li><a href="login.php">Staff Login</a></li>
+									<?php if (isset($_SESSION['auth'])){
+										echo("<li><a href='portal.php'>Staff Portal</a></li>");
+										echo("<li><a href='logout.php'>Log Out</a></li>");
+									}else{
+										echo("<li><a href='login.php'>Staff Login</a></li>");
+									}	
+									?>
 								</ul>
 								
 
@@ -113,7 +120,7 @@
 							<div class="row">
 								<div class="col text-center">
 									<div class="home_slider_title">Southlands College Learning Portal</div>
-									<div class="home_slider_subtitle">Powered by Southlands College ICT Society</div>
+									<div class="home_slider_subtitle"></div>
 									<div class="home_slider_form_container">
 										<form action="download.php" id="home_search_form_1" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between" method="GET">
 											<div class="d-flex flex-row align-items-center justify-content-start">

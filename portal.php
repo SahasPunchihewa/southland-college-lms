@@ -58,6 +58,12 @@ if (isset($_SESSION['auth'])){
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
 									<li class="active"><a href="#">Staff Portal</a></li>
+									<?php if (isset($_SESSION['auth'])){
+										echo("<li><a href='logout.php'>Log Out</a></li>");
+									}else{
+										echo("<li><a href='login.php'>Staff Login</a></li>");
+									}	
+									?>
 								</ul>
 								
 
@@ -132,7 +138,7 @@ if (isset($_SESSION['auth'])){
 					<div class="col-lg-6">
 						<div class="contact_form">
 							<div class="contact_info_title">File Upload Portal</div>
-							<p style='color: red;'>You can only upload .pdf and .docx</p>
+							<p style='color: red;'>You can upload .pdf and .docx(word) files only.</p>
 							<?php
 								if (isset($_GET['fail'])){
 									echo("<p style='color: red;'>Can't Upload file. File type must be pdf</p>");
@@ -142,7 +148,7 @@ if (isset($_SESSION['auth'])){
 								<div>
 									<div class="form_title">Select Grade</div>
 									<select id="courses_search_select" class="courses_search_select courses_search_input" name="grade">
-										<option>Select Grade</option>
+										<option value="0">Select Grade</option>
 										<?php
 											for($x=1; $x<14; $x+=1){
 												echo("<option value='".$x."'>Grade ".$x."</otion>");

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +54,13 @@
 							<nav class="main_nav_contaner ml-auto">
 								<ul class="main_nav">
 									<li><a href="index.php">Home</a></li>
-									<li class="active"><a href="#">Staff Portal</a></li>
+									<li class="active"><a href="portal.php">Staff Portal</a></li>
+									<?php if (isset($_SESSION['auth'])){
+											echo("<li><a href='logout.php'>Log Out</a></li>");
+										}else{
+											echo("<li><a href='login.php'>Staff Login</a></li>");
+										}	
+									?>
 								</ul>
 								
 
@@ -119,7 +126,7 @@ include("db.php");
 
 $error_count = 0;
 
-$sql = "Insert INTO document(documentTitle, documentGrade) VALUES('".$_POST['title']."',".$_POST['grade'].")";
+$sql = "Insert INTO document(documentTitle, documentGrade, uploadDate) VALUES('".$_POST['title']."',".$_POST['grade'].",'".date("Y/m/d")."')";
 
 if (mysqli_query($conn, $sql)) {
     $last_id = mysqli_insert_id($conn);
@@ -154,9 +161,9 @@ if (mysqli_query($conn, $sql)) {
 
    if($error_count >0){
     $msg = "File upload failed";
-    $msg_second = "Plase check file type.";
+    $msg_second = "File upload failed.";
    }else{
-    $msg = "You have successfully upload file";
+    $msg = "Your file has been uploaded successfully.";
    }
 ?>
 
@@ -166,7 +173,7 @@ if (mysqli_query($conn, $sql)) {
 				<div class="col">
 					<div class="section_title_container text-center">
 						<h2 class="section_title"><?php echo($msg)?></h2>
-						<div class="section_subtitle"><p><?php echo($msg_second) ?> Click <a href="portal.php">here</a> to proceed to file upload portal</p></div>
+						<div class="section_subtitle"><p><?php echo($msg_second) ?> Click <a href="portal.php">here</a> to access the file upload portal</p></div>
 					</div>
 				</div>
 			</div>

@@ -128,11 +128,11 @@
 						<?php
 						if($_GET['grade'] != 0){
 						?>
-							<h2 class="section_title">Grade <?php echo($_GET['grade']); ?> Available Resourses</h2>
+							<h2 class="section_title">Available Resources - Grade <?php echo($_GET['grade']); ?> </h2>
 							<?php
 						}else{
 							?>
-							<h2 class="section_title">Plese Select Grade</h2>
+							<h2 class="section_title">Please Select Grade</h2>
 							<?php
 						}
 						?>
@@ -161,7 +161,13 @@
 						<div class="course_footer">
 							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
 								<div class="col">
-									<div class="courses_button trans_200"><a href="<?php echo('uploads/'.$row['documentId'].'.pdf') ; ?>" target="_blank">Download</a></div>
+									<div class="courses_button trans_200"><a href="
+									<?php 
+										if(file_exists('uploads/'.$row['documentId'].'.pdf')){
+											echo('uploads/'.$row['documentId'].'.pdf');
+										}else{
+											echo('uploads/'.$row['documentId'].'.docx');}  ?>" target="_blank">Download</a></div>
+									<!-- echo('uploads/'.$row['documentId'].'.pdf') -->
 									<?php if (isset($_SESSION['auth'])){ ?>
 									<form>
 									<div class="courses_button trans_200"><a href="<?php echo('delete.php?id='.$row['documentId'].'&grade='.$_GET['grade']) ; ?>">Remove</a></div>

@@ -132,6 +132,7 @@ if (isset($_SESSION['auth'])){
 					<div class="col-lg-6">
 						<div class="contact_form">
 							<div class="contact_info_title">File Upload Portal</div>
+							<p style='color: red;'>You can only upload .pdf and .docx</p>
 							<?php
 								if (isset($_GET['fail'])){
 									echo("<p style='color: red;'>Can't Upload file. File type must be pdf</p>");
